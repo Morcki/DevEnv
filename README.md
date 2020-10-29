@@ -13,6 +13,7 @@ Step into the path where dockerfile locates, and just run the following command.
 ### How to Build Container
 
 Use `docker images` to check out if you have builded your image correctly.
+
 then input the following command to build a container based on your image.
 ```
 	docker run -itv {LOCAL_FILEFOLDER}:{CONTAINER_FILEFOLDER} -p {FREE_PORT}:22 (-d) {IMAGE_NAME}:{IMAGE_VERSION} /bin/bash
