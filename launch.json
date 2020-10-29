@@ -1,0 +1,54 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	
+	// template for building c++ project
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "build debug EXCUTABLE_FILE",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/WORKPLACE/EXCUTABLE_FILE",
+            "args": [
+                
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/WORKPLACE",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "debug EXCUTABLE_FILE"
+        },
+        {
+            "name": "build release EXCUTABLE_FILE",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/WORKPLACE/EXCUTABLE_FILE",
+            "args": [
+                
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/WORKPLACE",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask":"release EXCUTABLE_FILE"
+        }
+    ]
+}
